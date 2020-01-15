@@ -4,7 +4,7 @@
 	"scripts": {
 		"deploy": "npm version patch && npm run deploy:all",
 		"deploy:all": "npm run deploy:basic",
-		"deploy:basic": "npm publish ./dist/common --access public"
+		"deploy:basic": "npm publish ./ --access public"
 	},
 	"private": false
 }
