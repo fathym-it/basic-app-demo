@@ -1,23 +1,51 @@
 <html>
-    <head>
-        <style>
-        </style>
-    </head>
-    <body>
-        <div class="row">
-            <div class="cell" id="ievq">
-              <div id="imdz">Hello
-              </div>
-            </div>
-            <div class="cell">
-              <iframe frameborder="0" id="irtye" src="https://maps.google.com/maps?&z=1&t=q&output=embed"></iframe>
-            </div>
-          </div>
-          <div class="row">
-            <div class="cell">
-            </div>
-            <div class="cell">
-            </div>
-          </div>
-    </body>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .row {
+        display: table;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 100%;
+      }
+      .cell {
+        width: 8%;
+        display: table-cell;
+        height: 75px;
+      }
+      #imdz {
+        padding: 10px;
+      }
+      #irtye {
+        height: 350px;
+      }
+      @media (max-width: 768px) {
+        .cell {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="cell" id="ievq">
+        <div id="imdz">Hello</div>
+      </div>
+      <div class="cell">
+        <iframe frameborder="0" id="irtye" src="https://maps.google.com/maps?&z=1&t=q&output=embed"></iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+  </body>
 </html>
